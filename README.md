@@ -1,80 +1,48 @@
-# Browser-Time-Tracker
-Overview
-The Browser Time Tracker is a Chrome extension designed to help users monitor and manage their time spent browsing. It tracks usage in real-time, displays daily and weekly statistics, and allows users to set a daily limit. Notifications are sent to remind users of their browsing duration or when the daily limit is reached.
 
-Features
-Time Tracking:
+# Browser Time Tracker
 
-Tracks total time spent browsing in real-time.
-Automatically resets the time at the end of the day.
-Daily Limit:
 
-Users can set a daily browsing time limit.
-Notifies users when they reach or exceed the limit.
-Weekly Stats:
+Description: A Chrome extension that tracks your browsing time, notifies you about your usage, and allows you to set daily limits. Stay in control of your online habits with timely reminders and insightful usage patterns.
 
-Displays browsing stats for each day of the current week.
-Notifications:
+Features:\
+Tracks total browsing time per day.
 
-Hourly reminders of browsing time.
-Alerts when the daily limit is reached.
-Interactive Popup:
+Sends notifications:\
+Hourly reminders of browsing time.\
+Alerts when the daily limit is reached.\
+Displays daily usage and a weekly usage pattern.\
+Allows users to set a customizable daily usage limit.\
+Provides a visually appealing progress bar for tracking today's usage.
 
-View current usage and remaining time.
-Update daily limits directly from the popup.
-Installation
-Clone or download this repository.
-Open Chrome and navigate to chrome://extensions/.
-Enable "Developer mode" in the top right corner.
-Click on "Load unpacked" and select the folder containing this extension.
-The extension is now ready to use!
-Usage
-Popup Interface
-Click on the extension icon in the browser toolbar to open the popup.
-View:
-Time spent browsing today.
-Progress bar showing the percentage of the daily limit used.
-Remaining time for the day.
-Update your daily limit:
-Enter a new limit (in hours) in the input field.
-Click "Save" to update the limit.
-Weekly Stats
-View daily browsing stats for the current week in the "Weekly Stats" section of the popup.
-Files and Structure
-1. background.js
-Handles background tasks:
+Installation:\
+Download the project files.\
+Open the Chrome browser and navigate to chrome://extensions/.\
+Enable Developer Mode (toggle in the top-right corner).\
+Click on Load unpacked and select the folder containing the extension files.\
+The extension will now appear in your browser toolbar.
 
-Initializes storage values when the extension is installed.
-Tracks browsing time using a periodic alarm.
-Manages notifications for hourly reminders and daily limit alerts.
-2. popup.js
-Handles the popup interface:
+Usage:\
+Click on the extension icon to open the popup interface.\
+Today's Usage: Displays your total browsing time for the day.\
+Daily Limit: Set your daily time limit in hours.\
+Use the input box to specify the limit and click "Set Limit."\
+Usage Pattern: View your weekly browsing statistics.
 
-Updates the usage display, progress bar, and weekly stats.
-Allows users to set and save a daily limit.
-3. styles.css
-Defines the styles for the popup interface:
+Notifications will:\
+Remind you of your usage every hour.\
+Alert you when you reach your daily limit.\
+File Structure\
+manifest.json
 
-Clean and responsive design.
-Progress bars, buttons, and layout for stats display.
-Example Popup Interface:
-Displays current browsing time and progress.
-Allows users to adjust daily limits interactively.
-Customization
-Change Daily Limit:
+Permissions\
+The following permissions are required:
+alarms: For periodic time tracking.\
+storage: To store usage data and settings.\
+notifications: To send reminders and alerts.
 
-Modify the default daily limit in background.js:
-javascript
-Copy
-Edit
-dailyLimit: 480, // Default: 8 hours
-Notification Messages:
+Future Enhancements:\
+Add options for notifications customization (e.g., sound, frequency).\
+Include detailed analytics with charts for better insights.\
+Support for multiple browsers and platforms.
 
-Customize notifications in background.js under chrome.notifications.create.
-Style Tweaks:
 
-Update styles in styles.css for a personalized look.
-Future Enhancements
-Add monthly statistics.
-Introduce customizable themes.
-Sync data across devices using Chrome's cloud storage.
