@@ -1,0 +1,105 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 16px;
+  width: 320px;
+  background: #f5f7fa;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+h1 {
+  color: #2c3e50;
+  font-size: 24px;
+  margin: 0 0 16px 0;
+  text-align: center;
+}
+
+h2 {
+  color: #34495e;
+  font-size: 18px;
+  margin: 0 0 12px 0;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat {
+  font-size: 16px;
+  color: #2c3e50;
+  margin: 8px 0;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #eee;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #3498db;
+  transition: width 0.3s ease;
+}
+
+.limit-settings {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.time-input {
+  width: 60px;
+  padding: 4px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: #2980b9;
+}
+
+.status {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin: 8px 0 0 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.day-stat {
+  text-align: center;
+  font-size: 12px;
+}
+
+.day-hours {
+  background: #e8f4fc;
+  padding: 4px;
+  border-radius: 4px;
+  margin-top: 4px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Browser Time Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Browser Time Tracker</h1>
+      <div class="card">
+        <h2>Today's Usage</h2>
+        <p id="usage" class="stat">Loading...</p>
+        <div class="progress-bar">
+          <div id="timeProgress" class="progress"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Daily Limit</h2>
+        <div class="limit-settings">
+          <input
+            type="number"
+            id="limitHours"
+            min="1"
+            max="24"
+            value="8"
+            class="time-input"
+          />
+          <label>hours</label>
+          <button id="saveLimit" class="button">Set Limit</button>
+        </div>
+        <p id="limitStatus" class="status"></p>
+      </div>
+
+      <div class="card">
+        <h2>Usage Pattern</h2>
+        <div id="weeklyStats" class="stats-grid">
+          <!-- Weekly stats will be populated by JavaScript -->
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="popup.js"></script>
+</html>
