@@ -44,7 +44,7 @@ Usage
 File Structure
 --------------
 
-Browser-Time-Tracker
+Browser-Time-Tracker  
 ├── manifest.json  
 ├── (Other necessary files, e.g., popup.html, popup.js, background.js, style.css)  
 
